@@ -2,19 +2,24 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    role: 'P.O. Tech Lead',
-    company: 'SYDLE',
-    period: '2023 - Presente',
-    description: 'Liderança técnica DevOps, otimização de infraestrutura e DevEX. Desenvolvimento de uma Internal Developer Platform (IDP) com autoscaling e CI/CD. Resultados: -60% de custos, +300% em taxa de deploy, +80% em tempo de execução.'
+    "role": "P.O Tech Lead | DevOps",
+    "company": "SYDLE",
+    "period": "2023 - Presente",
+    "description": "Como P.O. Tech Lead DevOps, otimizei processos de infraestrutura e impulsionei o produto Java, elevando o DevEX e entregando resultados impactantes. Desenvolvi uma Internal Developer Platform (IDP) para automação do ciclo de vida das aplicações, integrando autoscaling, CI/CD e monitoramento. Fui responsável pela concepção e desenvolvimento de um sistema de billing em larga escala e conduzi a entrega de mais de 2.000 serviços em um mês no Grupo NC através de uma solução automatizada."
   },
   {
-    role: 'DevOps Engineer',
-    company: 'SYDLE',
-    period: '2021 - 2023',
-    description: 'Desenvolvimento e manutenção de pipelines CI/CD em AWS. Colaboração na evolução dos SYBOXes (Billing, CRM, HCM) e coordenação do desenvolvimento de um SDK da Amazon para JavaScript.'
+    "role": "DevOps Engineer",
+    "company": "SYDLE",
+    "period": "janeiro de 2021 - 2023",
+    "description": "Atuei como o principal desenvolvedor na criação da Internal Developer Platform (IDP), focada em automação de infraestrutura e esteiras de CI/CD. Fui responsável pela arquitetura e desenvolvimento de microsserviços e soluções serverless na AWS, utilizando tecnologias como AWS Lambda, CloudFormation, e Docker. Otimizei o ciclo de vida das aplicações e implementei soluções de autoscaling, resultando em ganhos de eficiência e redução de custos."
   },
-  // Adicione outras experiências aqui...
-];
+  {
+    "role": "Estagiário Engenheiro de Software",
+    "company": "SYDLE",
+    "period": "janeiro de 2020 - janeiro de 2021",
+    "description": "Atuei no desenvolvimento na plataforma SYDLE ONE, utilizando Javascript, ElasticSearch e MongoDB para o back-end. Para aplicações front-end, como portais de atendimento e sites de e-commerce, utilizei Angular, Bootstrap, HTML, CSS e Typescript. Tive também uma breve passagem pelo setor de suporte, atendendo a demandas de usabilidade e desenvolvimento, além de realizar a manutenção de hardware e software da empresa. Adquiri experiência com Ansible e Git em diversos deploys."
+  }
+]
 
 export const ExperiencePanel = () => (
   <motion.div
