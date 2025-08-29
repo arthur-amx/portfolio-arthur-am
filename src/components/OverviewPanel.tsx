@@ -15,29 +15,48 @@ export const OverviewPanel = ({ onNavigate }: OverviewPanelProps) => {
     const newLines = [...terminalLineData];
     newLines.push(<TerminalOutput key={Date.now()}>$ {terminalInput}</TerminalOutput>);
 
-    const [command, arg] = terminalInput.toLowerCase().split(' ').filter(Boolean);
+    const command = terminalInput.toLowerCase().trim();
 
-    if (command === 'nav' && arg) {
-      if (['root', 'projects', 'experience', 'contact'].includes(arg)) {
-        const targetModule = arg === 'root' ? 'overview' : arg;
-        onNavigate(targetModule);
-        newLines.push(<TerminalOutput key={arg}>Navigating to module: [{arg.toUpperCase()}]...</TerminalOutput>);
-      } else {
-        newLines.push(<TerminalOutput key="nav-error">ERROR: Unknown module '{arg}'. Use 'help' to see available modules.</TerminalOutput>);
-      }
-    } else if (command === 'help') {
-      newLines.push(<TerminalOutput key="help-1">Available commands:</TerminalOutput>);
-      newLines.push(<TerminalOutput key="help-2">- nav [module]: Navigate to a system module.</TerminalOutput>);
-      newLines.push(<TerminalOutput key="help-3">  Available modules: root, projects, experience, contact</TerminalOutput>);
-      newLines.push(<TerminalOutput key="help-4">- clear: Clears the terminal screen.</TerminalOutput>);
-    } else if (command === 'clear') {
-      setTerminalLineData([
-        <TerminalOutput key="welcome-clear">Welcome to [A.A.M. OS]. Type 'help' to see available commands.</TerminalOutput>
-      ]);
-      return;
-    } else {
-      newLines.push(<TerminalOutput key="error">COMMAND NOT FOUND: '{terminalInput}'. Type 'help' for a list of commands.</TerminalOutput>);
+    switch (command) {
+      case 'help':
+        newLines.push(<TerminalOutput key="help-title">Available commands:</TerminalOutput>);
+        newLines.push(<TerminalOutput key="help-root">&nbsp;&nbsp;- root:       Navigate to the main page.</TerminalOutput>);
+        newLines.push(<TerminalOutput key="help-projects">&nbsp;&nbsp;- projects:   View project archives.</TerminalOutput>);
+        newLines.push(<TerminalOutput key="help-experience">&nbsp;&nbsp;- experience: Access experience logs.</TerminalOutput>);
+        newLines.push(<TerminalOutput key="help-contact">&nbsp;&nbsp;- contact:    Open communication channel.</TerminalOutput>);
+        newLines.push(<TerminalOutput key="help-clear">&nbsp;&nbsp;- clear:      Clear the terminal screen.</TerminalOutput>);
+        break;
+      
+      case 'root':
+        onNavigate('overview');
+        newLines.push(<TerminalOutput key="nav-root">Navigating to module: [ROOT]...</TerminalOutput>);
+        break;
+      
+      case 'projects':
+        onNavigate('projects');
+        newLines.push(<TerminalOutput key="nav-projects">Navigating to module: [PROJECTS_ARCHIVE]...</TerminalOutput>);
+        break;
+      
+      case 'experience':
+        onNavigate('experience');
+        newLines.push(<TerminalOutput key="nav-exp">Navigating to module: [EXPERIENCE_LOGS]...</TerminalOutput>);
+        break;
+        
+      case 'contact':
+        onNavigate('contact');
+        newLines.push(<TerminalOutput key="nav-contact">Navigating to module: [COMMS_CHANNEL]...</TerminalOutput>);
+        break;
+
+      case 'clear':
+        setTerminalLineData([
+          <TerminalOutput key="welcome-clear">Welcome to [A.A.M. OS]. Type 'help' to see available commands.</TerminalOutput>
+        ]);
+        return;
+
+      default:
+        newLines.push(<TerminalOutput key="error">COMMAND NOT FOUND: '{command}'. Type 'help' for a list of commands.</TerminalOutput>);
     }
+    
     setTerminalLineData(newLines);
   };
 
@@ -69,6 +88,7 @@ export const OverviewPanel = ({ onNavigate }: OverviewPanelProps) => {
             colorMode={ ColorMode.Dark } 
             onInput={ handleInput }
             prompt='[AAM-OS]$'
+            height='350px'
           >
           { terminalLineData }
         </Terminal>
