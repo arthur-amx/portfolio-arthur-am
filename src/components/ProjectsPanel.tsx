@@ -6,7 +6,7 @@ const projects = [
     "description": "Plataforma interna desenvolvida na SYDLE/LEVTY para automação completa do ciclo de vida das aplicações, integrando autoscaling, CI/CD, controle de acesso AWS e monitoramento, resultando em ganhos massivos de eficiência e redução de custos. Atuei no desenvolvimento e otimização de diversos módulos.",
     "technologies": ["Java", "Spring Boot", "AWS Lambda", "CloudFormation", "Docker", "GitLab CI", "Kubernetes", "Observability Tools"],
     "githubLink": "https://github.com/arthur-amx",
-    "image": "https://media.licdn.com/dms/image/C4D0BAQFkC8xMvU5D4g/company-logo_200_200/0/1630635448665?e=1727308800&v=beta&t=xH3LqFv-9n-L_X1lB0jN5z1Y5t-B6jH0Z0Q7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W7W"
+    "image": "src/assets/images/sydle.png"
   },
   {
     "name": "DogLife - Sistema Integrado SYDLE ONE",
@@ -46,9 +46,8 @@ export const ProjectsPanel = () => (
             <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-3 inline-block">Ver Repositório &rarr;</a>
           </div>
           <div className="md:col-span-1 flex items-center">
-            {/* <img src={proj.image} alt={proj.name} className="rounded-lg border border-cyan-500/20" /> */}
             <div className="w-full h-32 bg-surface-dark rounded-lg border border-cyan-500/20 flex items-center justify-center">
-                <p className="text-gray-500">_imagem_ou_gif.mov</p>
+               <img src={proj.image} alt={proj.name} className="rounded-lg border border-cyan-500/20" />
             </div>
           </div>
         </div>
