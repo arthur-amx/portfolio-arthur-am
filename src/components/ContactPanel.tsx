@@ -1,11 +1,7 @@
-// src/components/ContactPanel.tsx
-
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-
-// Ícones para os links de contato
-import { Linkedin, Mail } from 'lucide-react'; // Biblioteca de ícones popular, instale com: npm install lucide-react
+import { Linkedin, Mail } from 'lucide-react';
 
 export const ContactPanel = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -14,32 +10,27 @@ export const ContactPanel = () => {
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.current) return;
-
     setStatus('sending');
-
-    // As variáveis de ambiente são lidas aqui
     const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
     if (!serviceID || !templateID || !publicKey) {
-        console.error("As variáveis de ambiente do EmailJS não estão configuradas!");
-        setStatus('error');
-        return;
+      console.error("As variáveis de ambiente do EmailJS não estão configuradas!");
+      setStatus('error');
+      return;
     }
-
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
           setStatus('success');
           form.current?.reset();
-          setTimeout(() => setStatus('idle'), 5000); // Reseta o status após 5s
+          setTimeout(() => setStatus('idle'), 5000);
         },
         (error) => {
           console.error('FAILED...', error);
           setStatus('error');
-          setTimeout(() => setStatus('idle'), 5000); // Reseta o status após 5s
+          setTimeout(() => setStatus('idle'), 5000);
         }
       );
   };
@@ -47,7 +38,7 @@ export const ContactPanel = () => {
   return (
     <motion.div
       key="contact"
-      className="p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20 max-w-2xl mx-auto"
+      className="p-4 sm:p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20 max-w-2xl mx-auto"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
@@ -56,7 +47,6 @@ export const ContactPanel = () => {
       <h2 className="text-xl font-bold text-primary-glow">[MODULE: COMMS_CHANNEL]</h2>
       <p className="mt-2 text-gray-400">Iniciando link de comunicação segura. Utilize os canais abaixo ou envie um payload direto.</p>
       
-      {/* Ícones de Contato */}
       <div className="flex gap-6 my-6">
         <a href="https://www.linkedin.com/in/arthur-amx" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-300 hover:text-primary-glow transition-colors">
           <Linkedin size={20} />

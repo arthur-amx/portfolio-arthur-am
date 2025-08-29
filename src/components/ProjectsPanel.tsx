@@ -1,4 +1,3 @@
-// src/components/ProjectsPanel.tsx
 import { motion } from 'framer-motion';
 
 const projects = [
@@ -9,13 +8,12 @@ const projects = [
     githubLink: '#', // Coloque o link do seu GitHub aqui, se for público
     image: '/path/to/your/image.gif' // Coloque um caminho para uma imagem ou GIF
   },
-  // Adicione seus outros projetos aqui...
 ];
 
 export const ProjectsPanel = () => (
   <motion.div
     key="projects"
-    className="p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20"
+    className="p-4 sm:p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
@@ -33,7 +31,7 @@ export const ProjectsPanel = () => (
             </div>
             <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-3 inline-block">Ver Repositório &rarr;</a>
           </div>
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 flex items-center">
             {/* <img src={proj.image} alt={proj.name} className="rounded-lg border border-cyan-500/20" /> */}
             <div className="w-full h-32 bg-surface-dark rounded-lg border border-cyan-500/20 flex items-center justify-center">
                 <p className="text-gray-500">_imagem_ou_gif.mov</p>

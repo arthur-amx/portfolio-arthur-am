@@ -1,4 +1,3 @@
-// src/components/ExperiencePanel.tsx
 import { motion } from 'framer-motion';
 
 const experiences = [
@@ -20,7 +19,7 @@ const experiences = [
 export const ExperiencePanel = () => (
   <motion.div
     key="experience"
-    className="p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20"
+    className="p-4 sm:p-8 backdrop-blur-xl bg-surface-dark/50 rounded-lg border border-cyan-500/20"
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: -20 }}
