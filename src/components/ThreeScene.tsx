@@ -33,7 +33,6 @@ const Starfield = (props: any) => {
   )
 }
 
-// Este é o componente que você vai usar
 export const ThreeScene = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full -z-10">
