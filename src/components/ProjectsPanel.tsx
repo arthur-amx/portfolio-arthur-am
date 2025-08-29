@@ -13,14 +13,14 @@ const projects = [
     "description": "Transformação completa do website DogLife, migrando de uma plataforma Wordpress para um sistema totalmente integrado ao SYDLE ONE com frontend em Angular. Inclui a gestão de clientes, agendamentos, estoque e serviços de pet shop. Fui responsável pela concepção, desenvolvimento e integração do sistema, garantindo uma experiência do usuário fluida e eficiente.",
     "technologies": ["Angular", "SYDLE ONE Platform", "Java", "REST APIs", "PostgreSQL", "HTML", "CSS", "JavaScript"],
     "githubLink": "https://github.com/arthur-amx",
-    "image": "https://www.doglife.com.br/wp-content/uploads/2021/06/logo-doglife.png"
+    "image": "src/assets/images/doglife.png"
   },
   {
     "name": "McDonald's Self-Service Tablet - JavaFX",
     "description": "Projeto pessoal de um sistema self-service para tablets do McDonald's, desenvolvido em JavaFX. Simula o processo de gerenciamento de pedidos, incluindo exclusão, cadastro, edição e visualização de produtos. O objetivo é criar uma interface intuitiva e funcional para otimizar a experiência do cliente.",
     "technologies": ["Java", "JavaFX", "FXML", "CSS"],
     "githubLink": "https://github.com/arthur-amx/McDonalds-self-service-tablet-JavaFX",
-    "image": "/path/to/mcdonalds_self_service_cover.png"
+    "image": "src/assets/images/mcJavaFX.png"
   }
 ]
 
