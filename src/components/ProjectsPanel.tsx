@@ -39,7 +39,7 @@ export const ProjectsPanel = () => (
     <h2 className="text-xl font-bold text-primary-glow">[MODULE: PROJECTS_ARCHIVE]</h2>
     <div className="mt-4 space-y-8">
       {projects.map((proj, index) => (
-        <div key={index} className="grid md:grid-cols-3 gap-6">
+        <div key={index} className="grid md:grid-cols-3 gap-6 items-center">
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold text-white">{proj.name}</h3>
             <p className="mt-1 text-gray-300">{proj.description}</p>
@@ -48,9 +48,9 @@ export const ProjectsPanel = () => (
             </div>
             <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-3 inline-block">Ver Repositório &rarr;</a>
           </div>
-          <div className="md:col-span-1 flex items-center">
-            <div className="w-full h-32 bg-surface-dark rounded-lg border border-cyan-500/20 flex items-center justify-center">
-               <img src={proj.image} alt={proj.name} className="rounded-lg border border-cyan-500/20" />
+          <div className="md:col-span-1">
+            <div className="w-full h-48 rounded-lg border border-cyan-500/20 overflow-hidden">
+               <img src={proj.image} alt={proj.name} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
