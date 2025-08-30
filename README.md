@@ -1,4 +1,4 @@
-# **Portfólio Profissional v2.0 - `A.A.M. OS`**
+# **Portfólio Profissional - `A.A.M. OS`**
 
 ### **[LIVE DEMO ->](https://portfolio-arthur-am.vercel.app/)**
 
