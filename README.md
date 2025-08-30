@@ -54,9 +54,8 @@ A arquitetura do `A.A.M. OS` foi construída com as seguintes tecnologias:
 ```portfolio-aam-os/
 ├── public/                  # Assets estáticos
 ├── src/
-│   ├── assets/              # Imagens e outros itens
+│   ├── assets/              # Assets internos
 │   │   ├── images/          # Imagens usadas no Frontend
-│   │   ├── icon/            # Imagens usadas no ícone do site
 │   ├── components/          # Componentes React reutilizáveis
 │   │   ├── ThreeScene.tsx   # Renderização da cena 3D de fundo
 │   │   ├── Header.tsx       # Cabeçalho da UI
