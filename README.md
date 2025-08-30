@@ -2,6 +2,8 @@
 
 ### **[LIVE DEMO ->](https://portfolio-arthur-am.vercel.app/)**
 
+![Demonstração do A.A.M. OS](./public/demo.gif)
+
 ---
 
 ## **1. Descrição do Projeto (System Overview)**
