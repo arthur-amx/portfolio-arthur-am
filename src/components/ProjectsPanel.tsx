@@ -49,8 +49,8 @@ export const ProjectsPanel = () => (
             <a href={proj.githubLink} target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline mt-3 inline-block">Ver Repositório &rarr;</a>
           </div>
           <div className="md:col-span-1">
-            <div className="w-full h-48 rounded-lg border border-cyan-500/20 overflow-hidden">
-               <img src={proj.image} alt={proj.name} className="w-full h-full object-contain" />
+            <div className="w-full rounded-lg border border-cyan-500/20 overflow-hidden">
+               <img src={proj.image} alt={proj.name} className="w-full h-auto" />
             </div>
           </div>
         </div>
