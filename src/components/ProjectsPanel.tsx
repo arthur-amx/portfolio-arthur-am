@@ -15,7 +15,7 @@ const projects = [
     "name": "DogLife - Sistema Integrado SYDLE ONE",
     "description": "Transformação completa do website DogLife, migrando de uma plataforma Wordpress para um sistema totalmente integrado ao SYDLE ONE com frontend em Angular. Inclui a gestão de clientes, agendamentos, estoque e serviços de pet shop. Fui responsável pela concepção, desenvolvimento e integração do sistema, garantindo uma experiência do usuário fluida e eficiente.",
     "technologies": ["Angular", "SYDLE ONE Platform", "Java", "REST APIs", "PostgreSQL", "HTML", "CSS", "JavaScript"],
-    "githubLink": "https://github.com/arthur-amx",
+    "githubLink": "https://www.doglife.com.br/",
     "image": doglifeImage
   },
   {
@@ -50,7 +50,7 @@ export const ProjectsPanel = () => (
           </div>
           <div className="md:col-span-1">
             <div className="w-full h-48 rounded-lg border border-cyan-500/20 overflow-hidden">
-               <img src={proj.image} alt={proj.name} className="w-full h-full object-cover" />
+               <img src={proj.image} alt={proj.name} className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
