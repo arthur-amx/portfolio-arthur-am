@@ -87,13 +87,16 @@ git clone https://github.com/seu-usuario/portfolio-aam-os.git
 cd portfolio-aam-os
 ```
 
-**Passo 2: Instale as dependências**```bash
+**Passo 2: Instale as dependências**
+```bash
 npm install
 ```
 
 **Passo 3: Configure as variáveis de ambiente (para o formulário)**
+
 Crie um arquivo chamado `.env` na raiz do projeto e adicione suas chaves do EmailJS:
-```
+
+```bash
 VITE_EMAILJS_SERVICE_ID=SEU_SERVICE_ID
 VITE_EMAILJS_TEMPLATE_ID=SEU_TEMPLATE_ID
 VITE_EMAILJS_PUBLIC_KEY=SUA_PUBLIC_KEY
