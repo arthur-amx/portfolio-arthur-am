@@ -124,7 +124,7 @@ Para clonar e rodar este projeto em seu ambiente local, siga os passos abaixo.
 
 **Passo 1: Clone o repositório**
 ```bash
-git clone https://github.com/seu-usuario/portfolio-aam-os.git
+git clone https://github.com/arthur-amx/portfolio-arthur-am.git
 cd portfolio-aam-os
 ```
 
