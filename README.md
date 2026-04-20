@@ -90,9 +90,56 @@ A arquitetura do `A.A.M. OS` foi construída com as seguintes tecnologias:
 ![New Relic](https://img.shields.io/badge/New_Relic-008C99?style=for-the-badge&logo=newrelic&logoColor=white)
 ![Jaeger](https://img.shields.io/badge/Jaeger-60DF9A?style=for-the-badge&logo=jaeger&logoColor=black)
 
-## **3. Estrutura de Diretórios (System Architecture)**
+---
 
-```portfolio-aam-os/
+## **3. Arquitetura do Sistema (System Architecture)**
+
+O `A.A.M. OS` é uma SPA (Single Page Application) onde o `Dashboard.tsx` orquestra a navegação entre painéis. A cena 3D roda em paralelo como plano de fundo independente via React Three Fiber.
+
+```mermaid
+graph TD
+    subgraph Browser ["🌐 Navegador (Vercel CDN)"]
+        APP["App.tsx\n(Root — monta cena + UI)"]
+    end
+
+    subgraph Scene ["🌌 Camada 3D (Three.js / R3F)"]
+        THREE["ThreeScene.tsx\n(Hub 3D — fundo interativo)"]
+    end
+
+    subgraph OS ["🖥️ Interface A.A.M. OS"]
+        HEADER["Header.tsx\n(Status Bar & Relógio)"]
+        DASH["Dashboard.tsx\n(Orquestrador de Painéis)"]
+    end
+
+    subgraph Panels ["📋 Painéis do Sistema"]
+        OV["OverviewPanel.tsx\n(Sobre Mim)"]
+        PR["ProjectsPanel.tsx\n(Projetos)"]
+        EX["ExperiencePanel.tsx\n(Experiências)"]
+        CT["ContactPanel.tsx\n(Contato)"]
+    end
+
+    subgraph External ["☁️ Serviços Externos"]
+        EJS["EmailJS\n(Envio de E-mail)"]
+        VCL["Vercel\n(Deploy & CDN)"]
+    end
+
+    APP --> THREE
+    APP --> HEADER
+    APP --> DASH
+    DASH -->|"navega para"| OV
+    DASH -->|"navega para"| PR
+    DASH -->|"navega para"| EX
+    DASH -->|"navega para"| CT
+    CT -->|"envia formulário"| EJS
+    APP -.->|"hospedado em"| VCL
+```
+
+---
+
+## **4. Estrutura de Diretórios (Project Structure)**
+
+```text
+portfolio-aam-os/
 ├── public/                  # Assets estáticos
 ├── src/
 │   ├── assets/              # Assets internos
@@ -114,7 +161,7 @@ A arquitetura do `A.A.M. OS` foi construída com as seguintes tecnologias:
 └── README.md
 ```
 
-## **4. Execução Local (Local Deployment)**
+## **5. Execução Local (Local Deployment)**
 
 Para clonar e rodar este projeto em seu ambiente local, siga os passos abaixo.
 
