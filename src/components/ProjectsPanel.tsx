@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import sydleImage from '../assets/images/sydle.png';
 import doglifeImage from '../assets/images/doglife.png';
 import mcJavaFXImage from '../assets/images/mcJavaFX.png';
-import creatorBRImage from '../assets/images/creatorbr.svg';
-import connectSportsImage from '../assets/images/connectsports.svg';
-import aliaMobiImage from '../assets/images/aliamobi.svg';
-import yaswheelImage from '../assets/images/yaswheel.svg';
+import creatorBRImage from '../assets/images/creatorbr.png';
+import connectSportsImage from '../assets/images/connectsports.png';
+import aliaMobiImage from '../assets/images/aliamobi.png';
+import yaswheelImage from '../assets/images/yaswheel.png';
 import vaigoImage from '../assets/images/vaigo.svg';
 
 interface Project {
