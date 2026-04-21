@@ -7,6 +7,7 @@ import connectSportsImage from '../assets/images/connectsports.png';
 import aliaMobiImage from '../assets/images/aliamobi.png';
 import yaswheelImage from '../assets/images/yaswheel.png';
 import vaigoImage from '../assets/images/vaigo.svg';
+import foodlyImage from '../assets/images/foodly.png';
 
 interface Project {
   name: string;
@@ -84,6 +85,14 @@ const projects: Project[] = [
     technologies: ["Python", "Django", "React", "TypeScript", "OpenAI GPT-4", "WhatsApp Business API", "Meta Graph API", "AWS"],
     githubLink: "https://github.com/arthur-amx/vaigo",
     image: vaigoImage
+  },
+  {
+    name: "Foodly - Plataforma White-Label de Delivery",
+    description: "Plataforma SaaS white-label multi-tenant para restaurantes que querem ter seu próprio canal de delivery — gestão completa de pedidos, cardápio e entregadores sem pagar comissão para terceiros.",
+    descriptionEng: "White-label multi-tenant SaaS platform for restaurants wanting their own delivery channel — full order, menu, and delivery management without paying third-party commissions.",
+    technologies: ["Next.js", "React", "TypeScript", "Chakra UI", "Spring Boot", "Java", "PostgreSQL", "Docker"],
+    githubLink: "https://github.com/arthur-amx/foodly",
+    image: foodlyImage
   }
 ];
 
