@@ -1,0 +1,45 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'>
+  <defs>
+    <linearGradient id='b' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:#1D4ED8'/><stop offset='100%' style='stop-color:#6D28D9'/></linearGradient>
+    <linearGradient id='d' x1='0%' y1='0%' x2='0%' y2='100%'><stop offset='0%' style='stop-color:#0D1117'/><stop offset='100%' style='stop-color:#111827'/></linearGradient>
+  </defs>
+  <rect width='800' height='380' fill='url(#b)'/>
+  <ellipse cx='700' cy='180' rx='200' ry='200' fill='rgba(255,255,255,.04)'/>
+  <text x='36' y='36' font-family='sans-serif' font-size='18' font-weight='700' fill='white'>Alia <tspan fill='#FBBF24'>.mobi</tspan></text>
+  <rect x='706' y='18' width='76' height='26' rx='6' fill='white'/><text x='744' y='35' font-family='sans-serif' font-size='11' fill='#1D4ED8' text-anchor='middle' font-weight='700'>Fale Conosco</text>
+  <rect x='36' y='66' width='224' height='28' rx='14' fill='rgba(255,255,255,.15)' stroke='rgba(255,255,255,.3)' stroke-width='1'/>
+  <text x='148' y='84' font-family='sans-serif' font-size='11' fill='white' text-anchor='middle'>Gemini AI + WhatsApp Business API</text>
+  <text x='36' y='138' font-family='sans-serif' font-size='36' font-weight='800' fill='white'>Automatize sua</text>
+  <text x='36' y='186' font-family='sans-serif' font-size='36' font-weight='800' fill='#FBBF24'>locadora de veiculos</text>
+  <text x='36' y='234' font-family='sans-serif' font-size='36' font-weight='800' fill='white'>pelo WhatsApp</text>
+  <text x='36' y='272' font-family='sans-serif' font-size='13' fill='rgba(255,255,255,.85)'>A Alia cadastra motoristas, realiza vistorias, gerencia</text>
+  <text x='36' y='290' font-family='sans-serif' font-size='13' fill='rgba(255,255,255,.85)'>cobrancas e responde duvidas pelo WhatsApp, sem parar.</text>
+  <rect x='36' y='316' width='170' height='38' rx='8' fill='white'/><text x='121' y='339' font-family='sans-serif' font-size='12' fill='#1D4ED8' text-anchor='middle' font-weight='600'>Fale com nossa equipe</text>
+  <rect x='500' y='58' width='200' height='310' rx='24' fill='#111827' stroke='rgba(255,255,255,.15)' stroke-width='2'/>
+  <rect x='500' y='78' width='200' height='44' fill='#128C7E'/>
+  <circle cx='524' cy='100' r='14' fill='#25D366'/><text x='524' y='105' font-family='sans-serif' font-size='14' fill='white' text-anchor='middle'>A</text>
+  <text x='545' y='96' font-family='sans-serif' font-size='11' font-weight='700' fill='white'>Alia - Assistente</text>
+  <text x='545' y='110' font-family='sans-serif' font-size='10' fill='rgba(255,255,255,.7)'>online agora</text>
+  <rect x='508' y='132' width='155' height='42' rx='8' fill='#DCF8C6'/>
+  <text x='520' y='148' font-family='sans-serif' font-size='10' fill='#111'>Alia, cobra a semana do Carlos</text>
+  <text x='520' y='162' font-family='sans-serif' font-size='10' fill='#111'>- Civic preto.</text>
+  <rect x='508' y='182' width='178' height='52' rx='8' fill='white'/>
+  <text x='520' y='198' font-family='sans-serif' font-size='10' fill='#111' font-weight='600'>Honda Civic 2022 - Carlos</text>
+  <text x='520' y='210' font-family='sans-serif' font-size='9' fill='#555'>31/03 a 06/04/2026</text>
+  <text x='520' y='222' font-family='sans-serif' font-size='10' fill='#128C7E' font-weight='700'>R$ 850,00</text>
+  <text x='520' y='232' font-family='sans-serif' font-size='9' fill='#555'>Enviar fatura no WhatsApp?</text>
+  <rect x='660' y='242' width='38' height='22' rx='4' fill='#DCF8C6'/><text x='679' y='257' font-family='sans-serif' font-size='11' fill='#111' text-anchor='middle'>Sim</text>
+  <rect x='508' y='272' width='170' height='56' rx='8' fill='white'/>
+  <text x='520' y='288' font-family='sans-serif' font-size='10' fill='#128C7E' font-weight='600'>Fatura enviada!</text>
+  <text x='520' y='302' font-family='sans-serif' font-size='9' fill='#555'>Carlos recebeu no WhatsApp.</text>
+  <text x='520' y='318' font-family='sans-serif' font-size='9' fill='#128C7E' font-weight='600'>Caixa previsto: R$ 9.400,00</text>
+  <rect y='380' width='800' height='120' fill='url(#d)'/>
+  <text x='100' y='440' font-family='sans-serif' font-size='13' fill='white' font-weight='700' text-anchor='middle'>WhatsApp IA</text>
+  <text x='100' y='458' font-family='sans-serif' font-size='11' fill='#6B7280' text-anchor='middle'>Integracao nativa</text>
+  <text x='290' y='440' font-family='sans-serif' font-size='13' fill='white' font-weight='700' text-anchor='middle'>Gemini AI</text>
+  <text x='290' y='458' font-family='sans-serif' font-size='11' fill='#6B7280' text-anchor='middle'>Vistorias inteligentes</text>
+  <text x='490' y='440' font-family='sans-serif' font-size='13' fill='white' font-weight='700' text-anchor='middle'>24/7</text>
+  <text x='490' y='458' font-family='sans-serif' font-size='11' fill='#6B7280' text-anchor='middle'>Disponivel sempre</text>
+  <text x='690' y='440' font-family='sans-serif' font-size='13' fill='white' font-weight='700' text-anchor='middle'>LGPD</text>
+  <text x='690' y='458' font-family='sans-serif' font-size='11' fill='#6B7280' text-anchor='middle'>Conformidade garantida</text>
+</svg>

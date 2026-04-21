@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0F1E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A30;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1E3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16162E;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cardShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#7C3AED" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgDark)"/>
+
+  <!-- Top glow -->
+  <ellipse cx="400" cy="0" rx="400" ry="150" fill="#7C3AED" opacity="0.05"/>
+
+  <!-- Nav -->
+  <rect width="800" height="52" fill="rgba(15,15,30,0.95)" stroke-width="0"/>
+  <line x1="0" y1="52" x2="800" y2="52" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="36" y="32" font-family="system-ui, sans-serif" font-size="20" font-weight="900" fill="url(#purpGrad)">Vaigo</text>
+  <rect x="620" y="16" width="80" height="26" rx="6" fill="#7C3AED"/>
+  <text x="660" y="33" font-family="system-ui, sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="600">Começar</text>
+
+  <!-- Hero section left -->
+  <text x="36" y="105" font-family="system-ui, sans-serif" font-size="11" fill="#7C3AED" letter-spacing="3">PLATAFORMA SAAS</text>
+  <text x="36" y="148" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="white">CRM + Chatbots com</text>
+  <text x="36" y="190" font-family="system-ui, sans-serif" font-size="32" font-weight="800" fill="url(#purpGrad)">IA no WhatsApp</text>
+
+  <text x="36" y="230" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.6)">Capture leads via Meta Ads, qualifique pelo</text>
+  <text x="36" y="248" font-family="system-ui, sans-serif" font-size="13" fill="rgba(255,255,255,0.6)">WhatsApp e converta com Cash on Delivery.</text>
+
+  <!-- Feature pills -->
+  <rect x="36" y="270" width="110" height="26" rx="13" fill="rgba(124,58,237,0.2)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="91" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">🤖 Chatbot IA</text>
+
+  <rect x="158" y="270" width="100" height="26" rx="13" fill="rgba(124,58,237,0.2)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="208" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">📊 CRM</text>
+
+  <rect x="270" y="270" width="120" height="26" rx="13" fill="rgba(124,58,237,0.2)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="330" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">💬 WhatsApp</text>
+
+  <rect x="36" y="306" width="115" height="26" rx="13" fill="rgba(124,58,237,0.2)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="93" y="323" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">📢 Meta Ads</text>
+
+  <rect x="163" y="306" width="145" height="26" rx="13" fill="rgba(124,58,237,0.2)" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="235" y="323" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">🛒 Cash on Delivery</text>
+
+  <!-- Action buttons -->
+  <rect x="36" y="355" width="140" height="38" rx="8" fill="#7C3AED"/>
+  <text x="106" y="378" font-family="system-ui, sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="600">Ver Demonstração</text>
+  <rect x="192" y="355" width="140" height="38" rx="8" fill="none" stroke="rgba(124,58,237,0.5)" stroke-width="1"/>
+  <text x="262" y="378" font-family="system-ui, sans-serif" font-size="13" fill="#A78BFA" text-anchor="middle">Saiba Mais</text>
+
+  <!-- Dashboard mockup right -->
+  <rect x="440" y="60" width="330" height="410" rx="16" fill="url(#cardGrad)" stroke="rgba(124,58,237,0.25)" stroke-width="1" filter="url(#cardShadow)"/>
+
+  <!-- Dashboard header -->
+  <rect x="440" y="60" width="330" height="44" rx="16" fill="#1A1A38"/>
+  <rect x="440" y="88" width="330" height="16" fill="#1A1A38"/>
+  <text x="460" y="88" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="white">Dashboard Vaigo</text>
+  <circle cx="738" cy="82" r="6" fill="#7C3AED"/>
+  <circle cx="720" cy="82" r="6" fill="#374151"/>
+  <circle cx="702" cy="82" r="6" fill="#374151"/>
+
+  <!-- Stats row -->
+  <rect x="456" y="116" width="88" height="60" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="500" y="138" font-family="system-ui, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Leads</text>
+  <text x="500" y="158" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">1,247</text>
+  <text x="500" y="172" font-family="system-ui, sans-serif" font-size="9" fill="#10B981" text-anchor="middle">↑ +18%</text>
+
+  <rect x="556" y="116" width="88" height="60" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="600" y="138" font-family="system-ui, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Conversões</text>
+  <text x="600" y="158" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle">342</text>
+  <text x="600" y="172" font-family="system-ui, sans-serif" font-size="9" fill="#10B981" text-anchor="middle">↑ +24%</text>
+
+  <rect x="656" y="116" width="98" height="60" rx="8" fill="rgba(124,58,237,0.1)" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+  <text x="705" y="138" font-family="system-ui, sans-serif" font-size="11" fill="#9CA3AF" text-anchor="middle">Receita</text>
+  <text x="705" y="158" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="url(#purpGrad)" text-anchor="middle">R$48k</text>
+  <text x="705" y="172" font-family="system-ui, sans-serif" font-size="9" fill="#10B981" text-anchor="middle">↑ +32%</text>
+
+  <!-- WhatsApp chat section in dashboard -->
+  <text x="460" y="202" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280">Últimas conversas — WhatsApp Bot</text>
+  <line x1="456" y1="210" x2="754" y2="210" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+
+  <!-- Chat rows -->
+  <g>
+    <circle cx="476" cy="228" r="12" fill="#10B981"/>
+    <text x="476" y="233" font-family="system-ui, sans-serif" font-size="10" fill="white" text-anchor="middle">C</text>
+    <text x="496" y="224" font-family="system-ui, sans-serif" font-size="11" fill="white" font-weight="600">Carlos Lima</text>
+    <text x="496" y="237" font-family="system-ui, sans-serif" font-size="10" fill="#6B7280">Pedido confirmado ✓</text>
+    <rect x="700" y="218" width="48" height="18" rx="9" fill="#10B981"/>
+    <text x="724" y="231" font-family="system-ui, sans-serif" font-size="9" fill="white" text-anchor="middle">COD ✓</text>
+  </g>
+
+  <line x1="456" y1="252" x2="754" y2="252" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <g>
+    <circle cx="476" cy="270" r="12" fill="#7C3AED"/>
+    <text x="476" y="275" font-family="system-ui, sans-serif" font-size="10" fill="white" text-anchor="middle">M</text>
+    <text x="496" y="266" font-family="system-ui, sans-serif" font-size="11" fill="white" font-weight="600">Maria Souza</text>
+    <text x="496" y="279" font-family="system-ui, sans-serif" font-size="10" fill="#6B7280">Oi, quero saber mais sobre...</text>
+    <rect x="700" y="260" width="48" height="18" rx="9" fill="#F59E0B"/>
+    <text x="724" y="273" font-family="system-ui, sans-serif" font-size="9" fill="white" text-anchor="middle">Qualif.</text>
+  </g>
+
+  <line x1="456" y1="294" x2="754" y2="294" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <g>
+    <circle cx="476" cy="312" r="12" fill="#EC4899"/>
+    <text x="476" y="317" font-family="system-ui, sans-serif" font-size="10" fill="white" text-anchor="middle">J</text>
+    <text x="496" y="308" font-family="system-ui, sans-serif" font-size="11" fill="white" font-weight="600">João Santos</text>
+    <text x="496" y="321" font-family="system-ui, sans-serif" font-size="10" fill="#6B7280">Quando chega? Pode entregar...</text>
+    <rect x="700" y="302" width="48" height="18" rx="9" fill="#7C3AED"/>
+    <text x="724" y="315" font-family="system-ui, sans-serif" font-size="9" fill="white" text-anchor="middle">Em curso</text>
+  </g>
+
+  <!-- Low-code builder hint -->
+  <text x="460" y="358" font-family="system-ui, sans-serif" font-size="11" fill="#6B7280">Chatbot Builder — Fluxo ativo</text>
+  <line x1="456" y1="366" x2="754" y2="366" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+
+  <!-- Flow nodes -->
+  <rect x="460" y="376" width="60" height="30" rx="6" fill="rgba(124,58,237,0.3)" stroke="#7C3AED" stroke-width="1"/>
+  <text x="490" y="395" font-family="system-ui, sans-serif" font-size="9" fill="#C4B5FD" text-anchor="middle">Início</text>
+  <line x1="520" y1="391" x2="545" y2="391" stroke="#7C3AED" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="545" y="376" width="70" height="30" rx="6" fill="rgba(124,58,237,0.2)" stroke="rgba(124,58,237,0.4)" stroke-width="1"/>
+  <text x="580" y="395" font-family="system-ui, sans-serif" font-size="9" fill="#A78BFA" text-anchor="middle">Qualificar</text>
+  <line x1="615" y1="391" x2="640" y2="391" stroke="#7C3AED" stroke-width="1"/>
+  <rect x="640" y="376" width="70" height="30" rx="6" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)" stroke-width="1"/>
+  <text x="675" y="395" font-family="system-ui, sans-serif" font-size="9" fill="#6EE7B7" text-anchor="middle">Checkout</text>
+
+  <!-- Stack badges -->
+  <g>
+    <rect x="456" y="422" width="54" height="20" rx="4" fill="rgba(55,65,81,0.6)"/>
+    <text x="483" y="436" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">Django</text>
+    <rect x="518" y="422" width="44" height="20" rx="4" fill="rgba(55,65,81,0.6)"/>
+    <text x="540" y="436" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">React</text>
+    <rect x="570" y="422" width="54" height="20" rx="4" fill="rgba(55,65,81,0.6)"/>
+    <text x="597" y="436" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">GPT-4</text>
+    <rect x="632" y="422" width="34" height="20" rx="4" fill="rgba(55,65,81,0.6)"/>
+    <text x="649" y="436" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">AWS</text>
+    <rect x="674" y="422" width="72" height="20" rx="4" fill="rgba(55,65,81,0.6)"/>
+    <text x="710" y="436" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF" text-anchor="middle">PostgreSQL</text>
+  </g>
+</svg>

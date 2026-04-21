@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080818;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10102A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7C3AED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A855F7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6D28D9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.05">
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="500" stroke="#7C3AED" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#7C3AED" stroke-width="1"/>
+  </g>
+
+  <!-- Glow blob -->
+  <ellipse cx="400" cy="250" rx="300" ry="180" fill="#7C3AED" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- Top nav -->
+  <rect width="800" height="44" fill="#0D0D22" opacity="0.9"/>
+  <text x="30" y="28" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="url(#purpleGrad)">⚡ CreatorBR</text>
+  <text x="300" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#888">Como funciona</text>
+  <text x="420" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#888">Galeria</text>
+  <text x="510" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#888">Simulador</text>
+  <text x="590" y="28" font-family="system-ui, sans-serif" font-size="12" fill="#888">Preços</text>
+  <rect x="690" y="12" width="88" height="22" rx="11" fill="url(#btnGrad)"/>
+  <text x="734" y="27" font-family="system-ui, sans-serif" font-size="11" fill="white" text-anchor="middle">Entrar na lista</text>
+
+  <!-- Badge pill -->
+  <rect x="240" y="68" width="320" height="26" rx="13" fill="#1A1A3A" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="400" y="85" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">⚡ GERAÇÃO DE SKINS COM IA · EXCLUSIVO BRASIL · ACESSO ANTECIPADO</text>
+
+  <!-- Hero text -->
+  <text x="400" y="140" font-family="system-ui, sans-serif" font-size="42" font-weight="900" fill="white" text-anchor="middle">Escreva um prompt.</text>
+  <text x="400" y="192" font-family="system-ui, sans-serif" font-size="42" font-weight="900" fill="url(#purpleGrad)" text-anchor="middle">Ganhe Robux.</text>
+  <text x="400" y="244" font-family="system-ui, sans-serif" font-size="42" font-weight="900" fill="white" text-anchor="middle">100% seus.</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="282" font-family="system-ui, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="middle">Nossa IA transforma qualquer prompt em português numa skin no padrão Roblox.</text>
+
+  <!-- Buttons -->
+  <rect x="184" y="300" width="192" height="38" rx="8" fill="url(#btnGrad)"/>
+  <text x="280" y="324" font-family="system-ui, sans-serif" font-size="13" fill="white" text-anchor="middle" font-weight="600">Gerar minha primeira skin →</text>
+  <rect x="392" y="300" width="176" height="38" rx="8" fill="#1A1A3A" stroke="#444" stroke-width="1"/>
+  <text x="480" y="324" font-family="system-ui, sans-serif" font-size="13" fill="#DDD" text-anchor="middle">Ver como funciona ↓</text>
+
+  <!-- Stats bar -->
+  <line x1="40" y1="360" x2="760" y2="360" stroke="#333" stroke-width="1"/>
+  <text x="120" y="385" font-family="system-ui, sans-serif" font-size="11" fill="#666" text-anchor="middle">≋ 2º maior mercado Roblox</text>
+  <text x="310" y="385" font-family="system-ui, sans-serif" font-size="11" fill="#666" text-anchor="middle">🔥 US$ 330M em UGC fashion</text>
+  <text x="490" y="385" font-family="system-ui, sans-serif" font-size="11" fill="#666" text-anchor="middle">⚡ Zero concorrentes no Brasil</text>
+  <text x="670" y="385" font-family="system-ui, sans-serif" font-size="11" fill="#666" text-anchor="middle">🎁 3 tokens grátis por dia</text>
+
+  <!-- Mock UI card -->
+  <rect x="220" y="408" width="360" height="75" rx="12" fill="#0F0F28" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="244" y="430" font-family="system-ui, sans-serif" font-size="9" fill="#888">SEU PROMPT</text>
+  <rect x="232" y="436" width="220" height="28" rx="6" fill="#1A1A3A" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="244" y="454" font-family="system-ui, sans-serif" font-size="11" fill="#C4B5FD">✨ "armadura de cavaleiro neon azul"</text>
+  <rect x="494" y="436" width="68" height="28" rx="6" fill="#1A1A3A" stroke="#7C3AED" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="528" y="454" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA" text-anchor="middle">SKIN →</text>
+  <text x="244" y="474" font-family="system-ui, sans-serif" font-size="9" fill="#555">Template 585×585px</text>
+  <text x="370" y="474" font-family="system-ui, sans-serif" font-size="9" fill="#555">Validação automática</text>
+  <text x="480" y="474" font-family="system-ui, sans-serif" font-size="9" fill="#555">Upload no Marketplace</text>
+</svg>
